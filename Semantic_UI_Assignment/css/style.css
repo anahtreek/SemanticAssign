@@ -1,0 +1,56 @@
+	.bg{
+		background-image: url('../image/bg.jpg'); 
+		background-size:100% auto;
+		 min-height: 700px;
+   
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-position: top;
+	}	
+	#logo{
+		height: 70px;
+	}
+	.jumbotron{
+		padding: 15% 0 32% 0;
+	    text-align: center;
+	}
+	.jumbotron h1{
+		font-size: 60px;
+		font-family: 'Quicksand', sans-serif;
+	}
+	#searchForm{
+		    background: rgba(0,0,0,0.3);
+		    margin: auto;
+	}
+	.ui.form{
+		padding: 30px;
+	}
+	
+	.deal{
+		height: 305px;
+	}
+	.interoffer{
+		height: 365px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	.desc{
+		background-color:black;
+		color: white;
+		font-size: 20px;
+		height: 60px;
+	}
+	.lab{
+		font-size: 15px;
+	}
+	.ui.segment.cust{
+		background-image: url("../image/custservices.jpg");
+	}
+	.ui.primary.button{
+		 background: rgba(0,0,0,0.3);
+		 width: 230px;
+	}
+	.ui.inverted.footer{
+		margin-top:20px;
+	}

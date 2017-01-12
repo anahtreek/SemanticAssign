@@ -1,0 +1,271 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../semantic/dist/semantic.min.js"></script>
+
+</head>
+<body>
+	<div class="bg">
+		<div class="ui vertical inverted sidebar menu right">
+			<div class="item">
+				<p><strong>Menu</strong></p>
+			</div><hr>
+			<a href="#" class="item">PNR Search</a>
+			<a href="#" class="item">Train Between Stations</a>
+			<a href="#" class="item">Seat Availability Calender</a>
+			<a href="#" class="item">Train Running Status</a>
+			<a href="#" class="item">Train Route</a>
+			<a href="#" class="item">Coach and Seat Layout</a>
+			<a href="#" class="item">Live Station Status</a>
+			<a href="#" class="item">Book a Cab</a>
+			<a href="#" class="item">Holiday Tour Packages</a>
+		</div>
+		<div class="pusher">
+			<div class="ui stackable container">
+				<div class="ui large secondary top fixed menu inverted">
+					<div class="item">
+						<img src="image/logo.png" alt="logo" class="ui image" id="logo">
+					</div>
+					<div class="right menu inverted">
+						<div class="item">
+							<div class="ui button basic inverted circular">Sign Up</div>
+						</div>
+						<div class="item">
+							<div class="ui button basic inverted circular">Sign In</div>
+						</div>
+						<a class="item">
+							<button class="ui button secondary" id="toggle">
+							<i class="sidebar icon"></i>Menu</button>
+						</a>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h1>Plan your travel in the right track!</h1>
+					<div class="ui grid stackable">
+					<div class="ui six wide column"  id="searchForm">
+						<div class="ui form">
+							<div class="field">
+								<select name="from" class="ui search selection dropdown large">
+									<option value="">From</option>
+									<option value="sbc">SBC</option>
+									<option value="hsra">HSRA</option>
+									<option value="ten">TEN</option>
+									<option value="ncj">NCJ</option>
+									<option value="cape">CAPE</option>
+								</select>
+							</div>	
+							<div class="field">
+								<select name="to" class="ui search selection dropdown large">
+									<option value="">To</option>
+									<option value="sbc">SBC</option>
+									<option value="hsra">HSRA</option>
+									<option value="ten">TEN</option>
+									<option value="ncj">NCJ</option>
+									<option value="cape">CAPE</option>
+								</select>	
+							</div>
+							<div class="field">
+								<input name="doj" type="date" class="ui large">
+							</div>
+							<div class="field">
+								<button class="ui blue button large">Book Ticket</button>	
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="ui relaxed grid stackable offersec">
+					<div class="eight wide column">
+						<h3>INTERNATIONAL OFFER</h3>	
+						<a href=""><img src="image/interoffer.jpg" alt="interoffer" class="ui image interoffer"></a>
+					</div>
+					<div class="eight wide column">
+						<h3>HOLIDAY DEALS</h3>
+						<a href="">
+							<div class="ui shape">
+								<div class="ui sides">
+									<div class="active side">
+										<img src="image/kerala.jpg" alt="kerala" class="ui image deal">
+										<div class="ui content desc">
+											<strong>Appealing Kerala with private vehicle</strong><br><br>
+											5 nights | Munnar, Allepey, Cochin, Thekkadi
+										</div>
+									</div>
+									<div class="side">
+										<img src="image/goa.jpg" alt="goa" class="ui image deal">
+										<div class="ui content desc">
+											<strong>Ever Rocking Goa</strong><br><br>
+											5 nights | Munnar, Allepey, Cochin, Thekkadi
+										</div>
+									</div>
+									<div class="side">
+										<img src="image/sikkim.jpg" alt="sikkim" class="ui image deal">
+										<div class="ui content desc">
+											<strong>North East Beauty</strong><br><br>
+											5 nights | Munnar, Allepey, Cochin, Thekkadi
+										</div>
+									</div>
+									<div class="side">
+										<img src="image/bhutan.jpg" alt="bhutan" class="ui image deal">
+										<div class="ui content desc">
+											<strong>Land of Thunder Dragon</strong><br><br>
+											5 nights | Munnar, Allepey, Cochin, Thekkadi
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="ui four column stackable grid">
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="image">
+                                <img src="image/costefficient.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="ui centered aligned header">COST-EFFICIENT</div>
+                                <div class="description">Trains are an increasingly cost-effective alternative to planes, particularly if you're going a relatively short distance or if you're traveling in the busy Northeast Corridor, where train service is fast and frequent.Less cost More quality.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="image">
+                                <img src="image/sanic.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="ui centered aligned header">SANIC</div>
+                                <div class="description">Air travel involves a lot of waiting in lines. Those lines can drive any innocent traveler to the brink of his or her sanity. Train travel eliminates those lines. Most railway services do not involve check-in, and have self-service ticket. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="image" >
+                                <img src="image/comfort.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="ui centered aligned header">COMFORT</div>
+                                <div class="description">Train rides are smooth and turbulence-free, meaning they won't jostle the contents of your luggage or your stomach. Seats are usually roomy enough -- certainly roomier than the back seat of a car or an economy-class airplane seat.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="ui fluid card">
+                            <div class="image">
+                                <img src="image/nohiddenfee.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="ui centered aligned header">NO HIDDEN FEE</div>
+                                <div class="description">Generally, trains aren't picky about how much luggage you bring on, as long as you can handle it yourself (and some services, like Amtrak, have free red-cap service that will help you when needed). And with no booking fee, it pays to check it out.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui stackable grid">
+                    <div class="eight wide column">
+                       	<h3>CUSTOMER SERVICES</h3> 
+                       	<div class="ui segment cust">
+                            <div class="ui icon vertical left secondary menu cust_ser">
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="print large icon"></i><span class="lab">Print e-Ticket</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="remove large icon"></i><span class="lab">Cancellation</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="file text large icon"></i><span class="lab">Check Refund Status</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="call large icon"></i><span class="lab">Problems/Complaints</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="browser large icon"></i><span class="lab">User Manual</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="tablet large icon"></i><span class="lab">Mobile App</span></button></a>
+                            	</div>
+                            </div>
+                        
+                        
+                            <div class="ui icon vertical right secondary menu cust_ser">
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="travel large icon"></i><span class="lab">Manage Bookings</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="help large icon"></i><span class="lab">FAQs</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="train large icon"></i><span class="lab">Check Train Status</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="mail large icon"></i><span class="lab">Contact Us</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="food large icon"></i><span class="lab">Food Order</span></button></a>
+                            	</div>
+                            	<div class="item">
+                            		<a href="#"><button class="ui button primary"><i class="credit card alternative large icon"></i><span class="lab">e-Wallet</span></button></a>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                    	<h3>WHY CHIKKU BUKKU?</h3>
+                        <div class="ui stacked segment inverted blue">
+                            <i class="smile large icon"></i>
+                            <h3>Customer Satisfaction</h3>
+                            <span>Superior customer service, 24x7 dedicated helpline and over 5 million delighted customer and still growing.</span>
+                        </div>
+                        <div class="ui stacked segment inverted blue">
+                            <i class="tags large icon"></i>
+                            <h3>Best Deals Guaranteed</h3>
+                            <span>Great experiences at lowest prices guaranteed.</span>
+                        </div>
+                        <div class="ui stacked segment inverted blue">
+                            <i class="university large icon"></i>
+                            <h3>India's best leading Travel company</h3>
+                            <span>Established in 2000 and growing stronger.</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="ui inverted vertical footer segment">
+			<div class="ui center aligned container">
+  				<div class="ui stackable inverted grid">
+    				<div class="twelve wide column">
+     					<div class="ui inverted link list">
+      						<span class="item">Copyrights Â© 2014 All Rights Reserved by Canvas Inc.</span>
+        					<a class="item" href="#" target="_blank">PRIVACY POLICY</a>
+        					<a class="item" href="#" target="_blank">TERMS & CONDITIONS</a>
+      					</div>
+    				</div>
+    				<div class="four wide column">
+     				<div class="ui inverted link list">
+        				Follow Us : <br>
+         				<a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        				<a href="https://plus.google.com/"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
+                 		<a href="https://twitter.com/"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                 		<a href="https://github.com/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                 		<a href="https://in.yahoo.com/"><i class="fa fa-yahoo fa-2x" aria-hidden="true"></i></a>
+					</div>
+    			</div>
+  			</div>
+  		</div>
+	</div>
+	<script>
+		$('#toggle').click(function(){$('.ui.sidebar').sidebar('show')});
+		$('.ui.dropdown').dropdown();
+		//setInterval(function(){$('.ui.shape').shape('flip over');}, 2000);
+		// $('.ui.shape').shape('flip up');
+	 </script>
+</body>
+</html>
